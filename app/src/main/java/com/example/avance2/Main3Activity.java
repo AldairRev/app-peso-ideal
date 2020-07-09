@@ -21,6 +21,8 @@ public class Main3Activity extends AppCompatActivity {
 
         tv = (TextView) findViewById(R.id.tv);
         imgPeso = (ImageView) findViewById(R.id.imgPeso);
+        getSupportActionBar().setTitle("Volver");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Bundle extras = getIntent().getExtras();
 

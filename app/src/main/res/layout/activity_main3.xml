@@ -11,19 +11,20 @@
         android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:background="@drawable/borderradius"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
         android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imgPeso" />
 
     <ImageView
         android:id="@+id/imgPeso"
         android:layout_width="wrap_content"
-        android:layout_height="280dp"
+        android:layout_height="200dp"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

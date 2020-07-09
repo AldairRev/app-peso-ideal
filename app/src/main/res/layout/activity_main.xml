@@ -9,25 +9,53 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/balanza"
+    <View
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:background="@drawable/borderradius"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/undraw_personal_training_0dqn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvComenzar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:text="Calcula tu Peso Ideal"
-        android:textColor="#000"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/borderradius_start"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="75dp"
+        android:paddingTop="25dp"
+        android:paddingRight="75dp"
+        android:paddingBottom="25dp"
+        android:text="INICIAR"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="¡Comienza ahora!"
+        android:textColor="@color/black"
+        android:textFontWeight="800"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,89 +63,18 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
-        android:id="@+id/tvComenzar"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/borderradius"
-        android:fontFamily="sans-serif"
-        android:paddingLeft="50dp"
-        android:paddingTop="10dp"
-        android:paddingRight="50dp"
-        android:paddingBottom="10dp"
-        android:text="COMENZAR"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="Calcula tu peso ideal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        android:textFontWeight="900"
+        android:textSize="26sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvInfo" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center_horizontal"
-        android:text="Para calcular el peso ideal hay que saber manejar el Índice de Masa Corporal (IMC), una medida que nos ayuda a detectar si nos encontramos dentro de los valores saludables o no."
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txvInfo3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/txvInfo"
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:gravity="center_horizontal"
-        android:text="La Organización Mundial de la Salud estima que un peso saludable es el que se sitúa entre valores de 18,5 y 24,9."
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvInfo2" />
-
-    <TextView
-        android:id="@+id/txvInfo2"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:text=".Los valores inferiores a 18,5 nos indican un peso demasiado bajo."
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvInfo3" />
-
-    <TextView
-        android:id="@+id/txvInfo3"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:text=".Si son iguales o superiores a 25 se consideraría ya sobrepeso. Si supera los 30 se trata de obesidad."
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

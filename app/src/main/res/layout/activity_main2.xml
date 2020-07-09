@@ -15,24 +15,13 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:text="Calcular Su Peso Ideal"
+        android:layout_marginTop="50dp"
+        android:text="Completa el formulario"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txvSalida"
-        android:layout_width="100dp"
-        android:layout_height="0dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPeso" />
 
     <Button
         android:id="@+id/btnPeso"
@@ -42,8 +31,17 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="Calcular Peso Ideal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/borderradius_start"
+        android:paddingLeft="70dp"
+        android:paddingTop="25dp"
+        android:paddingRight="70dp"
+        android:paddingBottom="25dp"
+        android:text="Calcular"
+        android:textFontWeight="500"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtPeso" />
@@ -55,33 +53,15 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
         android:layout_marginTop="30dp"
         android:gravity="center_vertical"
-        android:text="Sexo:"
+        android:text="Género"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textMensaje" />
-
-    <EditText
-        android:id="@+id/edtSexo"
-        android:layout_width="200dp"
-        android:layout_height="45dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:background="@drawable/borderradius"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="textPersonName"
-        android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textMensaje"
-        app:layout_goneMarginLeft="@android:dimen/app_icon_size" />
 
     <EditText
         android:id="@+id/edtPeso"
@@ -90,16 +70,20 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:background="@drawable/borderradius"
+        android:layout_marginStart="97dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:background="@drawable/border_color_less"
         android:ems="10"
         android:gravity="center"
         android:inputType="textPersonName"
         android:padding="10dp"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtAltu" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvPeso" />
 
     <TextView
         android:id="@+id/txvPeso"
@@ -108,14 +92,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:gravity="center_vertical"
-        android:text="Peso(Kg):"
-        android:textSize="18sp"
+        android:text="Peso (Kg):"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvAltu" />
+        app:layout_constraintTop_toBottomOf="@+id/edtAltu" />
 
     <EditText
         android:id="@+id/edtAltu"
@@ -125,32 +109,57 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:background="@drawable/borderradius"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_color_less"
         android:ems="10"
         android:gravity="center"
         android:inputType="textPersonName"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtSexo" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvAltu" />
 
     <TextView
         android:id="@+id/txvAltu"
-        android:layout_width="95dp"
-        android:layout_height="45dp"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:gravity="center_vertical"
-        android:text="Altura(Cm):"
-        android:textSize="18sp"
+        android:text="Altura (Cm):"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+
+    <RadioButton
+        android:id="@+id/edtSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@color/yellow"
+        android:text="Masculino"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvSexo" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@color/yellow"
+        android:text="Femenino"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edtSexo"
         app:layout_constraintTop_toBottomOf="@+id/txvSexo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

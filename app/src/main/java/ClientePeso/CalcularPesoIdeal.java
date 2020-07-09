@@ -30,11 +30,11 @@ public class CalcularPesoIdeal {
         calcularIMC();
         String msg;
         if (imc <= 18.5) {
-            msg = "Su peso es demasiado bajo";
+            msg = "Tiene un peso muy bajo";
         } else if (imc < 25) {
-            msg = "Su peso es ideal";
+            msg = "Tiene un peso normal";
         } else if (imc < 30) {
-            msg = "Usted presemnta sobrepeso";
+            msg = "Usted presenta sobrepeso";
         } else {
             msg = "Usted presenta obesidad";
         }
@@ -43,10 +43,10 @@ public class CalcularPesoIdeal {
 
     public String mostrarResultado() {
         String msg;
-        msg = "Su peso es : " + this.peso + " Kg\n";
-        msg = msg + "Su talla es  : " + (this.talla/100.0) + " m\n";
-        msg = msg + "Su imc es   : " + (Math.round((peso/Math.pow(talla,2)) * 1000000) / 100.0) + "\n\n";
-        msg = msg + resultadoDePesoIdeal();
+        msg = resultadoDePesoIdeal() + "\n\n\n\n";
+        msg = msg + "IMC         : " + (Math.round((peso/Math.pow(talla,2)) * 1000000) / 100.0) + "\n";
+        msg = msg + "Altura      : " + (this.talla/100.0) + " m\n";
+        msg = msg + " Peso       : " + this.peso +  " Kg \n\n";
         return msg;
     }
 

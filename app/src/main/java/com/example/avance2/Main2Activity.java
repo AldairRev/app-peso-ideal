@@ -11,7 +11,8 @@ import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
 
-    EditText sexo,peso,altura;
+    EditText peso,altura;
+    Button sexo;
     Button pesos;
     TextView salida;
 
@@ -19,11 +20,12 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        sexo=(EditText) findViewById(R.id.edtSexo);
+        sexo=(Button) findViewById(R.id.edtSexo);
         peso=(EditText) findViewById(R.id.edtPeso);
         altura=(EditText) findViewById(R.id.edtAltu);
-        salida=(TextView) findViewById(R.id.txvSalida);
         pesos=(Button) findViewById(R.id.btnPeso);
+        getSupportActionBar().setTitle("Volver");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         pesos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,7 +56,6 @@ public class Main2Activity extends AppCompatActivity {
                 sex = sexo.getText().toString();
                 pes = Integer.parseInt(peso.getText().toString());
                 altu = Integer.parseInt(altura.getText().toString());
-                sexo.getText().clear();
                 peso.getText().clear();
                 altura.getText().clear();
                 Intent i = new Intent(Main2Activity.this, Main3Activity.class);
