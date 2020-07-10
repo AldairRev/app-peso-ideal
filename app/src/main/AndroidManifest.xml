@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.avance2">
+    package="com.example.app_peso_ideal">
 
     <application
         android:allowBackup="true"
@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main3Activity"
-            android:parentActivityName=".Main2Activity">
+        <activity android:name="com.example.app_peso_ideal.Main3Activity"
+            android:parentActivityName="com.example.app_peso_ideal.Main2Activity">
         </activity>
-        <activity android:name=".Main2Activity"
-            android:parentActivityName=".MainActivity">
+        <activity android:name="com.example.app_peso_ideal.Main2Activity"
+            android:parentActivityName="com.example.app_peso_ideal.MainActivity">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.app_peso_ideal.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

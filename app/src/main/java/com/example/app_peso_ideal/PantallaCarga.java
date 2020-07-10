@@ -1,10 +1,10 @@
-package com.example.avance2;
+package com.example.app_peso_ideal;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.view.LayoutInflater;
 
-import com.example.avance2.R;
+import com.example.app_peso_ideal.R;
 
 public class PantallaCarga {
     private Activity activity;
